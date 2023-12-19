@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+* a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: deeppink;
+}
+li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  li a:hover {
+    background-color: aliceblue;
+  }
+* li {
+    list-style:none;
+}
+.container {
+    position: relative;
+    min-height:100vh;
+}
+.bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bg::after {
+    content:"";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(pbg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    z-index:-1;
+    filter: brightness(80%);
+}
+.menu {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: deeppink;
+}
+.logo img {
+    padding-left: 50px;
+    width: auto;
+    height: 150px;
+}
+.menu ul {
+    display: flex;
+}
+.menu ul li {
+    padding: 0 30px;
+}
+.menu ul li a {
+    font-size:25px;
+    font-weight: bold;
+    color:blue
+}
+.header h1 {
+    font-family:arial;
+    font-size: xx-large;
+    color: blue;
+    padding-left: 50px;
+}
+.header h4 {
+    font-family:arial;
+    font-size: larger;
+    padding-left: 30px;
+}
+.joasua {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.any {
+    padding: 80px;
+}
+.joasua1 {
+    width: 400px;
+    height: 400px;
+}
+.joasua_1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.any_2 {
+    padding: 80px;
+}
+.joasua2 {
+    width: 400px;
+    height: 400px;
+}
+footer {
+    font-family: monospace;
+    text-align: right;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: deeppink;
+}
+footer > .footer {
+    padding-right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
